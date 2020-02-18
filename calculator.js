@@ -7,7 +7,7 @@ function calculateTip() {
   var result= (amountB * chooseOption) / amountPeople;
   result = Math.round(result * 100) / 100;
   result = result.toFixed(2);
-  document.getElementById("totalTip").innerHTML = result;
+  document.getElementById("resultTip").innerHTML = result;
 }
 
 document.getElementById("calculate").onclick = function() {
