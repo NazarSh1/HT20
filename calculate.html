@@ -2,38 +2,88 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Calculate for bill</title>
+    <link rel="stylesheet" href="calcul.css" type="text/css">
 </head>
 <body>
-<h1>Tip Calculator</h1>
-<form name="formcalc">
+<div id="container">
+  <h1>Tip Calculator</h1>
+  <div id="calculator">
+<form>
+      <p>How much was your bill?
+        <p>
+          $ <input id="amountB" type="text" placeholder="Bill Amount">
+
+          <p>How was your service?
+            <p>
+              <select id="chooseOption">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="0.1">10&#37; &#45; Perfect</option>
+            <option value="0.07">7&#37; &#45; Good</option>
+            <option value="0.05">5&#37; &#45; Bad</option>
+        </select>
+
+    </form>
+    <p>How many people are sharing the bill?</p>
+    <input id="amountPeople" type="text" placeholder="Number of People"> people
+    <button type="button" id="calculate">Calculate!</button>
+
+  </div>
+  <div id="resultTip">
+    <sup>$</sup><span>0.00</span>
+  </div>
+  </div>
+
+</body>
+</html>
+<script type="text/javascript" src="calculator.js"></script>
+
+
+
+
+
+
+
+
+<!--
+<body>
+<div class="cont">
+<h1 class="">Tip Calculator</h1>
+<form id="form">
 <p><b>How much was your bill?</b></p>
-<p>$<input type="text" name="amount" placeholder="Bill Amount">
+<p>$<input id="amountB" type="text" name="amount" placeholder="Bill Amount">
 <p><b>How was your service?</b></p>
-<select>
-  <option>Choose an option</option>
-  <option value="0.09">drink</option>
-  <option value="0.12">meat</option>
-  <option value="0.07">fruits</option>
+<select id="chooseOp">
+  <option disabled selected value="0">-- Choose an Option --</option>
+  <option value="0.05" >5%</option>
+  <option value="0.07" >7%</option>
+  <option value="0.10" >10%</option>
 </select>
-<p><b>How many people are sharing the bill?</b></p>
-<p><input type="text" name="numpeople" placeholder="Number of People">people
-<p><input type="text" name="tresult" placeholder="result">
-<input type="button" value="Calculate" onclick="sumValues()">
  </form> 
- <script type="text/javascript">
+<p><b>How many people are sharing the bill?</b></p>
+<p><input id="numpeople" type="text" placeholder="Number of People">people
+<button type="button" id="calculate">Calculate!</button>
+ <div id="totalTip">
+    <sup>$</sup><span id="tip">0.00</span>
+    <small id="each">each</small>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="calculator.js"></script>-->
+ <!--<script type="text/javascript">
  function sumValues(){
-     var num1, num2, res;
+     var num1, num2, procent, res;
      num1=Number(document.formcalc.amount.value);
      num2=Number(document.formcalc.numpeople.value);
-     res=Math.floor(num1/num2);
+     procent=Number(document.formcalc.proc);
+     res=Math.floor(num1/num2));
      document.formcalc.tresult.value=res;
  }
 
 
- </script>
-</body>
-</html>
+ </script>-->
+
 
 <!--https://www.youtube.com/watch?v=v5pNyxmtp9g
     https://stackoverflow.com/questions/21468436/add-input-box-when-selecting-a-specific-option-into-select-drop-down-->
