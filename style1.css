@@ -1,4 +1,21 @@
 
+
+/*https://startbootstrap.com/snippets/pricing-table/
+https://startbootstrap.com/snippets/
+https://bootswatch.com/
+https://getbootstrap.com/docs/4.4/getting-started/introduction/
+https://getbootstrap.com/docs/4.4/components/alerts/
+
+
+
+*/
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 :root {
@@ -20,7 +37,7 @@
 body {
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(-45deg, #19C5FE, #4553FF);
+  background: linear-gradient(-45deg, #19C5FE, rgb(62, 75, 221));
   padding: 20px;
 }
 
